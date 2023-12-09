@@ -1,6 +1,6 @@
 # Final Project Repository
 
-Team: (PUT YOUR TEAM MEMBERS NAMES HERE)
+Team: Stuti Pandey, Vatsal Verma
 
 You need to provide us access to your code repository.
 

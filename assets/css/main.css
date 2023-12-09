@@ -4687,3 +4687,59 @@
 			}
 		}
 		
+
+		.tracker-form {
+			background: #f9f9f9; /* Light grey background */
+			padding: 20px; /* Spacing inside the form */
+			border-radius: 8px; /* Rounded corners */
+			max-width: 600px; /* Maximum width of the form */
+			margin: 0 auto; /* Center the form */
+		}
+	
+		.tracker-form label {
+			display: block; /* Make labels block elements */
+			margin-top: 10px; /* Add space above labels */
+			color: #333; /* Dark text for better readability */
+		}
+	
+		.tracker-form select, .tracker-form input[type="time"] {
+			width: 100%; /* Full width */
+			padding: 10px; /* Padding inside inputs */
+			margin-top: 5px; /* Space above inputs */
+			border: 1px solid #ddd; /* Light grey border */
+			border-radius: 4px; /* Slightly rounded corners for inputs */
+		}
+	
+		.start-task-button {
+			background-color: #000; /* Black background */
+			color: #fff; /* White text */
+			border: none; /* No border */
+			padding: 15px 20px; /* Padding inside the button */
+			margin-top: 20px; /* Space above the button */
+			border-radius: 4px; /* Rounded corners for button */
+			cursor: pointer; /* Pointer cursor on hover */
+			text-transform: uppercase; /* Uppercase text */
+			font-weight: bold; /* Bold font */
+			display: block; /* Make the button a block to fit width */
+			width: 100%; /* Full width */
+		}
+	
+		.start-task-button:hover {
+			background-color: #222; /* Darker background on hover */
+		}
+	
+		.time-range {
+			display: flex; /* Use flexbox for layout */
+			justify-content: space-between; /* Space out the start and end time */
+			gap: 10px; /* Add space between flex items */
+		}
+	
+		@media (max-width: 480px) {
+			.start-task-button {
+				padding: 10px; /* Smaller padding on mobile */
+			}
+	
+			.time-range {
+				flex-direction: column; /* Stack time inputs on mobile */
+			}
+		}

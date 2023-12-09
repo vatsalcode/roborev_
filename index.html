@@ -93,13 +93,41 @@
 								</form>
 								<div id="timerStatus"></div>
 							</div>
+
+							<div class="progress-bar-container">
+								<div class="progress-bar-label">
+									<span id="robotNameDisplay">Robot Name:</span>
+									<span id="timeLeftDisplay">Time Left:</span>
+								</div>
+								<div class="progress-bar">
+									<div class="progress" id="progress"></div>
+								</div>
+							</div>
+
+							<div class="robot-schedules">
+								<div id="FrankaSchedule" class="robot-schedule">
+									<h3>Franka's Reservations</h3>
+									<ul id="FrankaReservations" class="reservation-list"></ul>
+								</div>
+							
+								<div id="SawyerSchedule" class="robot-schedule">
+									<h3>Sawyer's Reservations</h3>
+									<ul id="SawyerReservations" class="reservation-list"></ul>
+								</div>
+							</div>
+							
 						
 				</section>
 		
 					</section>
 					   
 				</main>
-				<script src="script.js"></script>
+				<script src="public/script.js"></script>
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.scrollex.min.js"></script>
+				<script src="assets/js/skel.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
 			</section><!-- Two --><section id="two" class="wrapper style3"><div class="inner">
 					
 

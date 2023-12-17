@@ -69,7 +69,7 @@
 									<label for="robotName">Available Robot:</label>
 									<select id="robotName">
 										<!-- Options will be added here dynamically -->
-										<option value="Select">Select Here -</option>
+										<option value="Select">Select Robo Here -</option>
 										<option value="Franka">Franka - Panda</option>
 										<option value="Sawyer">Sawyer</option>
 									</select>
@@ -79,6 +79,9 @@
 										<option value="Select">Select Task :</option>
 										<option value="Grasping">Grasping</option>
 										<option value="Painting">Painting</option>
+										<option value="Picking">Picking</option>
+										<option value="Heavy load lift">Heavy load lifting</option>
+										<option value="Breakdown">Breakdown</option>
 										<!-- Add more task options here if needed -->
 									</select>
 									<!-- Time range selection -->
@@ -89,7 +92,7 @@
 										<input type="time" id="endTime">
 									</div>
 			
-									<button type="submit"><strong>Start Task</strong></button>
+									<button type="Submit"><strong>Start Task</strong></button>
 								</form>
 								<div id="timerStatus"></div>
 							</div>

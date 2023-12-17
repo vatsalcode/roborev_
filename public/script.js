@@ -20,9 +20,19 @@ document.getElementById('trackerForm').addEventListener('submit', (e) => {
 });
 
 function isRobotAvailable(robotName, startTime, endTime) {
+    const start = convertToMinutes(startTime);
+    const end = convertToMinutes(endTime);
+
     return robotSchedules[robotName].every(task => {
-        return (endTime <= task.startTime) || (startTime >= task.endTime);
+        const taskStart = convertToMinutes(task.startTime);
+        const taskEnd = convertToMinutes(task.endTime);
+        return end <= taskStart || start >= taskEnd;
     });
+}
+
+function convertToMinutes(time) {
+    const [hours, minutes] = time.split(":").map(Number);
+    return hours * 60 + minutes;
 }
 
 function displaySchedule(robotName) {
@@ -107,6 +117,14 @@ function startProgressBar(robotName, duration) {
     }, 1000); // Update every second
 }
 // Start the first check
+setTimeout(checkReservations, 60000);
+
+// Handle tab visibility change
+document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+        checkReservations(); // Check immediately when the tab becomes visible
+    }
+});
 setTimeout(checkReservations, 60000);
 
 // Handle tab visibility change
